@@ -1,0 +1,274 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    width:100%;
+    font-family: "Times New Roman", Georgia, Serif;
+}
+header{
+    background-color: #FFFFFF;
+    width:100%;
+    padding:1rem 2rem;
+    position: fixed;
+    box-shadow: 1px 2px 5px 1px rgba(0,0,0,0.38);
+-webkit-box-shadow: 1px 2px 5px 1px rgba(0,0,0,0.38);
+-moz-box-shadow: 1px 2px 5px 1px rgba(0,0,0,0.38);
+z-index:1000;
+   
+}
+header>p{
+    font-size:1rem;
+    letter-spacing: 0.2rem;
+    font-weight: normal;
+    padding:0.5rem;
+}
+header>p:hover,li:hover{
+    background-color: rgb(199, 199, 199);
+    cursor: pointer;
+    
+}
+nav{
+    display:none;
+}
+/* hero image */
+.hero-image,figure,figure>img{
+    width:100%;
+}
+figure>img{
+    max-height:100%;
+    height:270px;
+    
+}
+
+figcaption{
+  margin-top:-4.5rem;
+  padding:0 0 0 2rem;
+  font-size:2.2rem;
+  letter-spacing: 0.52rem;
+  color:rgb(90, 90, 90);
+  font-weight: 500;
+}
+.hero-image{
+    margin-bottom:7rem;
+}
+
+/* about */
+.seasonal{
+    background-color: rgb(228, 228, 228);
+    padding:0.4rem;
+}
+.about{
+    /* display:flex; */
+    /* flex-direction:column-reverse; */
+    width:92%;
+    margin:0 auto;
+    margin-bottom:7rem;
+
+}
+.about_image{
+    display: none;
+}
+.section-title{
+    text-align:center;
+    letter-spacing: 0.52rem;
+    font-weight: 500;
+    margin-bottom:3rem;
+    word-spacing:1.5rem;
+    
+}
+.sub-title{
+    text-align:center;
+    letter-spacing:0.4rem;
+    font-size:1.1rem;
+    font-weight: 500;
+    margin-bottom:1.5rem;
+}
+.section-details{
+    width:100%;
+    
+}
+.section-details p,.contact-details{
+    margin-bottom:1.5rem;
+    font-size:1.1rem;
+    line-height: 1.7rem;
+}
+.section-details p:last-child{
+    color:rgb(121, 114, 114);
+}
+
+/* menu section */
+.menu-section{
+    margin-top:7rem;
+    border-top:1px solid rgb(231, 224, 224);
+    margin-bottom:7rem;
+    
+}
+.menu-section{
+    display: flex;
+    flex-direction: column-reverse;
+}
+.menu-details{
+    margin:0 auto;
+    margin-top:7rem;
+    margin-bottom:2rem;
+    width:92%;
+   
+
+}
+.menu-title{
+    letter-spacing:0.4rem;
+    font-weight: normal;
+    margin-bottom:1rem;
+}
+.menu-sub-title{
+    margin-bottom:3rem;
+    color:rgb(121, 114, 114);
+}
+.menu-image{
+    width:92%;
+    margin:0 auto;
+}
+.menu-image img{
+    width:100%;
+    opacity:0.7;
+    
+}
+
+/* contact-section */
+.contact{
+    border-top:1px solid rgb(231, 224, 224);
+    padding-top:7rem;
+    width:92%;
+    margin:0 auto;
+}
+.contact-title{
+    text-align: left;
+    font-weight: bold;
+}
+.contact-details{
+    font-size:1rem;
+}
+address{
+    margin:1rem 0;
+    font-style: normal;
+    font-size:1.2rem;
+    color:#607D8B;
+    font-weight: bold;
+}
+.form{
+    width:100%;
+}
+label,label input{
+    width:100%
+}
+input{
+    margin-top:1rem;
+    padding:1rem;
+    border:none;
+    border-bottom:1px solid rgb(224, 222, 222);
+}
+button{
+    margin-top:1.5rem;
+    border:1px solid rgb(224, 222, 222);
+    background-color: rgb(224, 222, 222);
+    font-size:0.8rem;
+    padding:0.5rem;
+    font-weight: 600;
+}
+button:hover{
+    cursor:pointer;
+    background-color: rgb(196, 193, 193);;
+}
+
+/* footer */
+footer{
+    background-color: rgb(228, 228, 228);
+    margin-top:7rem;
+    width:100%;
+    padding:3rem;
+   
+}
+footer p{
+    text-align: center;
+    font-size:0.8rem;
+}
+.powered{
+    text-decoration: underline;
+}
+.powered:hover{
+    color:#607D8B;
+    cursor: pointer;
+}
+
+@media (min-width:600px){
+  
+   header{
+       display: flex;
+       justify-content: space-between;
+   }
+   nav{
+   display:inline-block
+   }
+   ul{
+       list-style-type: none;
+       display:flex;
+       justify-content: space-between;
+   }
+   li{
+      
+       padding:0.5rem;
+   }
+   nav a{
+       text-decoration: none;
+       color:black;
+       letter-spacing: 0.3rem;
+       
+   }
+
+   figure img{
+       height:100%;
+   }
+   .about{
+       display:flex;
+   }
+   .about_image{
+       display: inline;
+       width:50%;
+   }
+   .about_image img{
+       width:100%;
+   }
+   .section-details{
+       width:50%;
+       margin-left:1rem;
+   }
+   .section-details p:last-child{
+       display:none;
+   }
+}
+
+@media (min-width:900px) {
+    .section-details p:last-child{
+        display:block;
+    }
+    .about,.menu-section,.contact{
+        width:70%;
+    }
+    .section-details{
+        margin-left:2rem;
+    }
+    .menu-section{
+        display: flex;
+        flex-direction: row-reverse;
+        margin: 7rem auto;
+        
+    }
+    
+   .menu-image,.menu-details{
+       width:50%;
+       margin-top:7rem;
+   }
+
+}
